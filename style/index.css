@@ -78,7 +78,7 @@ header{
   background: transparent;
   border: 1px solid darkred;
   outline: none;
-  transition: 1s ease-in-out;
+  transition: .4s ease-in-out;
   padding: 10px;
   text-decoration: none;
 }
@@ -105,9 +105,10 @@ header{
 	background: transparent;
 	border: 1px solid darkred;
 	outline: none;
-	transition: 1s ease-in-out;
+	transition: .4s ease-in-out;
 	padding: 10px;
 	text-decoration: none;
+	margin-left: 20px;
 }
 .project-showcase {
 	display: grid;
@@ -137,8 +138,6 @@ footer{
 	margin-bottom: 1.5%;
 }
 .contact-button{
-	display: flex;
-	align-items: center;
 	width: auto;
 	height: auto;
 	color: darkred;
@@ -150,4 +149,46 @@ footer{
 	padding: 10px;
 	text-decoration: none;
 	margin-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
 }
+@media only screen and (max-width: 600px) {
+	body {
+	background-color: blue;
+	}
+	header {
+		display: flex;
+		flex-direction: column;
+	}
+	nav {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.nav-buttons {
+		height: 25px;
+		margin: 2px;
+	}
+	.project-showcase {
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 15px;
+		margin-top: 50px;
+		align-items: center;
+		justify-content: center;
+
+	}
+	.project-showcase img {
+		display: flex;
+		justify-content: space-evenly;
+		width: 100%;
+		height: auto;
+	}
+	.over-text{
+		font-size: 150%;
+	}
+  }
