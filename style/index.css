@@ -154,7 +154,7 @@ footer{
 }
 @media only screen and (max-width: 600px) {
 	body {
-	background-color: blue;
+	background-color: #2C2525;
 	}
 	header {
 		display: flex;
